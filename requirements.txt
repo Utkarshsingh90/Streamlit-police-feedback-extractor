@@ -1,7 +1,13 @@
 streamlit
-spacy>=3.7.0
+
+# This tells spaCy to install itself AND all compatible
+# dependencies for transformers (torch, thinc, numpy, etc.)
+# Pinning to 3.7.3 to match your model.
+spacy[transformers]==3.7.3
+
+# This model link is still correct
 https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.7.3/en_core_web_trf-3.7.3-py3-none-any.whl#egg=en_core_web_trf
-transformers
-torch
+
+# Your PDF libraries
 pdfplumber
 pymupdf
