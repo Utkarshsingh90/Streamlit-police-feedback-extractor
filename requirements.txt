@@ -1,11 +1,13 @@
 streamlit
 
-# This tells spaCy to install itself AND all compatible
-# dependencies for transformers (torch, thinc, numpy, etc.)
-# Pinning to 3.7.3 to match your model.
+# Pinning numpy to a stable version to fix
+# the "numpy.dtype size changed" error.
+numpy==1.24.4
+
+# Let spacy pull its dependencies (torch, transformers, etc.)
 spacy[transformers]==3.7.3
 
-# This model link is still correct
+# The spaCy model
 https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.7.3/en_core_web_trf-3.7.3-py3-none-any.whl#egg=en_core_web_trf
 
 # Your PDF libraries
