@@ -12,7 +12,7 @@ st.title("🚓 Smart Analytics: Police Feedback Analyzer")
 def load_models():
     sentiment_model = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english")
     topic_model = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
-    nlp = spacy.load("en_core_web_trf")
+    nlp = spacy.load("en_core_web_md")
     return sentiment_model, topic_model, nlp
 
 sentiment_model, topic_model, nlp = load_models()
