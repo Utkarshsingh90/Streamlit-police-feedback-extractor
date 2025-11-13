@@ -1,14 +1,14 @@
 streamlit
 
-# Pinning numpy to a stable version to fix
-# the "numpy.dtype size changed" error.
+# Pinning numpy to fix the "dtype size changed" error
 numpy==1.24.4
 
 # Let spacy pull its dependencies (torch, transformers, etc.)
 spacy[transformers]==3.7.3
 
-# The spaCy model
-https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.7.3/en_core_web_trf-3.7.3-py3-none-any.whl#egg=en_core_web_trf
+# --- NEW MODEL LINK ---
+# This now points to the MEDIUM model (en_core_web_md)
+https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.7.3/en_core_web_md-3.7.3-py3-none-any.whl#egg=en_core_web_md
 
 # Your PDF libraries
 pdfplumber
